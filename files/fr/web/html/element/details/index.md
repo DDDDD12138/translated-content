@@ -9,7 +9,37 @@ L'élément HTML **`<details>`** est utilisé comme un outil permettant de rév�
 
 La plupart du temps, le contrôle utilisé pour cet élément est un triangle qui est tourné ou tordu afin d'indiquer si l'élément est révélé ou non. Si le premier élément fils de l'élément `<details>` est un élément `<summary>`, c'est le contenu de ce dernier qui est utilisé comme intitulé pour le contenu à révéler (l'intitulé est donc toujours visible).
 
-{{EmbedInteractiveExample("pages/tabbed/details.html", "tabbed-standard")}}
+{{InteractiveExample("HTML Demo: <details>", "tabbed-standard")}}
+
+```html interactive-example
+<details>
+  <summary>Details</summary>
+  Something small enough to escape casual notice.
+</details>
+```
+
+```css interactive-example
+details {
+  border: 1px solid #aaa;
+  border-radius: 4px;
+  padding: 0.5em 0.5em 0;
+}
+
+summary {
+  font-weight: bold;
+  margin: -0.5em -0.5em 0;
+  padding: 0.5em;
+}
+
+details[open] {
+  padding: 0.5em;
+}
+
+details[open] summary {
+  border-bottom: 1px solid #aaa;
+  margin-bottom: 0.5em;
+}
+```
 
 > [!NOTE]
 > L'utilisation courante d'un triangle qui tourne ou s'enroule pour représenter l'ouverture ou la fermeture du widget explique pourquoi on les appelle parfois « twisties » en anglais.

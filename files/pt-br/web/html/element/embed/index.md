@@ -7,7 +7,11 @@ slug: Web/HTML/Element/embed
 
 O **elemento HTML `<embed>`** incorpora conteúdo externo no ponto especificado no documento. Este conteúdo é fornecido por um aplicativo externo ou outra fonte de conteúdo interativo, como um plug-in de navegador.
 
-{{EmbedInteractiveExample("pages/tabbed/embed.html", "tabbed-standard")}}
+{{InteractiveExample("HTML Demo: <embed>", "tabbed-standard")}}
+
+```html interactive-example
+<embed type="video/mp4" src="/media/cc0-videos/flower.mp4" width="250" height="200" />
+```
 
 > [!NOTE]
 > Este tópico documenta apenas o elemento definido como parte do HTML5. Ele não trata da implementação anterior e não padronizada do elemento.

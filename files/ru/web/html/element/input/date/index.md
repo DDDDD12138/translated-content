@@ -9,7 +9,27 @@ slug: Web/HTML/Element/input/date
 
 Отображение **`date`** различается в зависимости от браузера, кроме того не все браузеры поддерживают **`date`**. Подробнее см. [Browser compatibility](#browser_compatibility). В неподдерживаемых браузерах элемент будет отображаться как обычный [`<input type="text">`](/ru/docs/Web/HTML/Element/input/text).
 
-{{EmbedInteractiveExample("pages/tabbed/input-date.html", "tabbed-standard")}}
+{{InteractiveExample("HTML Demo: <input type="date">", "tabbed-standard")}}
+
+```html interactive-example
+<label for="start">Start date:</label>
+
+<input type="date" id="start" name="trip-start" value="2018-07-22" min="2018-01-01" max="2018-12-31" />
+```
+
+```css interactive-example
+label {
+  display: block;
+  font:
+    1rem 'Fira Sans',
+    sans-serif;
+}
+
+input,
+label {
+  margin: 0.4rem 0;
+}
+```
 
 Среди браузеров со своим интерфейсом для выбора даты, есть интерфейс браузеров Chrome и Opera, который выглядит так:
 

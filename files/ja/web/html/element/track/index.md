@@ -9,7 +9,27 @@ l10n:
 
 **`<track>`** は [HTML](/ja/docs/Web/HTML) の要素で、メディア要素 ({{HTMLElement("audio")}} および {{HTMLElement("video")}}) の子として使用します。この要素は自動的に処理される字幕など、時間指定されたテキストトラック (または時系列データ) を指定することができます。トラックは [WebVTT 形式](/ja/docs/Web/API/WebVTT_API) (`.vtt` ファイル) を用います。
 
-{{EmbedInteractiveExample("pages/tabbed/track.html", "tabbed-standard")}}
+{{InteractiveExample("HTML Demo: <track>", "tabbed-standard")}}
+
+```html interactive-example
+<video controls src="/media/cc0-videos/friday.mp4">
+  <track default kind="captions" srclang="en" src="/media/examples/friday.vtt" />
+  Download the
+  <a href="/media/cc0-videos/friday.mp4">MP4</a>
+  video, and
+  <a href="/media/examples/friday.vtt">subtitles</a>.
+</video>
+```
+
+```css interactive-example
+video {
+  width: 250px;
+}
+
+video::cue {
+  font-size: 1rem;
+}
+```
 
 <table class="properties">
   <tbody>

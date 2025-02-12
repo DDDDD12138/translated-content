@@ -9,7 +9,28 @@ l10n:
 
 [HTML](/ru/docs/Web/HTML)-элемент **`<style>`** содержит информацию о стилях документа или его части. Они будут применены к содержимому документа, включающего элемент `<style>`.
 
-{{EmbedInteractiveExample("pages/tabbed/style.html", "tabbed-standard")}}
+{{InteractiveExample("HTML Demo: <style>", "tabbed-standard")}}
+
+```html interactive-example
+<style>
+  p {
+    color: #26b72b;
+  }
+  code {
+    font-weight: bold;
+  }
+</style>
+
+<p>This text will be green. Inline styles take precedence over CSS included externally.</p>
+
+<p style="color: blue">The <code>style</code> attribute can override it, though.</p>
+```
+
+```css interactive-example
+p {
+  color: #f00;
+}
+```
 
 Элемент `<style>` должен быть включён внутрь {{htmlelement("head")}} документа. В общем случае лучше размещать стили во внешних таблицах стилей и подключать их с помощью элементов {{htmlelement("link")}}.
 

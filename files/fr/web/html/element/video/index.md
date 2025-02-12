@@ -7,7 +7,21 @@ slug: Web/HTML/Element/video
 
 L'élément HTML **`<video>`** intègre un contenu vidéo dans un document.
 
-{{EmbedInteractiveExample("pages/tabbed/video.html", "tabbed-standard")}}
+{{InteractiveExample("HTML Demo: <video>", "tabbed-standard")}}
+
+```html interactive-example
+<video controls width="250">
+  <source src="/media/cc0-videos/flower.webm" type="video/webm" />
+
+  <source src="/media/cc0-videos/flower.mp4" type="video/mp4" />
+
+  Download the
+  <a href="/media/cc0-videos/flower.webm">WEBM</a>
+  or
+  <a href="/media/cc0-videos/flower.mp4">MP4</a>
+  video.
+</video>
+```
 
 L'exemple précédent illustre comment utiliser l'élément `<video>` simplement, à la façon d'un élément {{htmlelement("img")}}. Le chemin vers le média à afficher est fourni via l'attribut `src` et on peut inclure d'autres attributs afin de spécifier la largeur et la hauteur, la lecture automatique et/ou en boucle, les contrôles affichés, etc.
 

@@ -10,7 +10,21 @@ L'élément HTML **`<u>`** permet d'afficher un fragment de texte qui est annot�
 > [!WARNING]
 > Cet élément était auparavant appelé _underline_ pour les anciennes versions des spécifications HTML. Si on souhaite simplement souligner du texte, il ne faudra pas utiliser cet élément mais la propriété CSS {{cssxref("text-decoration")}} avec la valeur `"underline"`.
 
-{{EmbedInteractiveExample("pages/tabbed/u.html", "tabbed-shorter")}}
+{{InteractiveExample("HTML Demo: <u>", "tabbed-shorter")}}
+
+```html interactive-example
+<p>You could use this element to highlight <u>speling</u> mistakes, so the writer can <u>corect</u> them.</p>
+```
+
+```css interactive-example
+p {
+  margin: 0;
+}
+
+u {
+  text-decoration: #f00 wavy underline;
+}
+```
 
 ## Attributs
 
